@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Este repositorio proporciona una base sólida para gestionar proyectos de manera sencilla. Está diseñado exclusivamente con el frontend, permitiéndote integrarlo fácilmente con la lógica de backend que desees implementar. Puedes utilizarlo tal como está o adaptarlo como punto de partida para desarrollar tu propia solución personalizada.
+
+This repository provides a solid foundation for managing projects easily. It is built exclusively with the frontend, allowing you to seamlessly integrate it with any backend logic you choose to implement. You can use it as-is or adapt it as a starting point to develop your own custom solution.
 
 ## Getting Started
 
