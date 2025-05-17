@@ -1,42 +1,68 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+/* Fuerza modo oscuro global */
+html, body {
+  background-color: #000 !important;
+  color: #f1f1f1 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Asegura que ningún estilo de Bootstrap lo sobrescriba */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  animation: moveDots 60s linear infinite;
+  z-index: -1;
+  pointer-events: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Fondo animado */
+@keyframes moveDots {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-10%, -10%);
   }
 }
+
+/* Enlaces */
+a {
+  color:  rgb(44 201 255) !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: #66b2ff !important;
+}
+
+/* Navbar */
+.navbar,
+.navbar-dark {
+  background-color: rgba(18, 18, 18, 0.8) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Asegura que main también sea transparente */
+main {
+  background: transparent !important;
+  min-height: 100vh;
+}
+
+/* El resto de tus estilos: .timeline, .project-card, etc. siguen igual */

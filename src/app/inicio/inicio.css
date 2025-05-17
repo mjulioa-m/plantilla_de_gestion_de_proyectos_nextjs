@@ -1,0 +1,90 @@
+.inicio-proyectos {
+  font-family: 'Roboto', sans-serif;
+  color: #f8f9fa;
+  background-color: transparent;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+/* Título */
+.inicio-proyectos h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Tarjetas */
+.inicio-proyectos .proyecto-card {
+  background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+  color: #f8f9fa;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.inicio-proyectos .proyecto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Campos de texto */
+.inicio-proyectos input,
+.inicio-proyectos select {
+ background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+  color: white;
+  border: 1px solid #555;
+}
+
+.inicio-proyectos input:focus,
+.inicio-proyectos select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Progreso */
+.inicio-proyectos .progress {
+  margin: 10px 0;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.inicio-proyectos .progress-bar {
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+/* Alertas */
+.inicio-proyectos .alert {
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Tareas */
+.inicio-proyectos .badge {
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.inicio-proyectos .badge-success {
+  background-color: #28a745;
+}
+
+.inicio-proyectos .badge-secondary {
+  background-color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inicio-proyectos .proyecto-card {
+    margin-bottom: 15px;
+  }
+
+  .inicio-proyectos {
+    padding: 15px;
+  }
+}

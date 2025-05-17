@@ -1,0 +1,48 @@
+/* Fondo general oscuro */
+.calendar-container {
+ background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+}
+.transparente {
+  background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+} 
+/* Ajuste de calendario oscuro */
+.calendar-dark-wrapper .rbc-calendar {
+  background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+  color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Ajuste de los días previos */
+.rbc-day-bg.rbc-off-range-bg {
+  background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+  color: #6c757d; /* Gris más suave para texto */
+}
+
+/* Ajuste de la barra de herramientas */
+.rbc-toolbar button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  margin: 0 0.2rem;
+  border-radius: 0.25rem;
+}
+
+/* Barra de herramientas activa */
+.rbc-toolbar button.rbc-active {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+/* Estilo de eventos */
+.rbc-event {
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Estilo de los días activos y de eventos */
+.rbc-day-bg.rbc-current {
+  background-color: #0d6efd !important; /* Azul para el día actual */
+  color: white;
+}

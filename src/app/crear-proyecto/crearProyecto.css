@@ -1,0 +1,79 @@
+/* crearProyecto.css */
+
+.container {
+   background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  color: #f0f0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin-top: 3rem;
+}
+
+.card {
+   background-color: rgba(28, 28, 30, 0.6); /* Transparente oscuro */
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+label {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  background: #3b3b5c;
+  border: none;
+  border-radius: 8px;
+  color: #e0e0ff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b0b0d6;
+}
+
+input:focus,
+textarea:focus {
+  background: #50507a;
+  outline: none;
+  box-shadow: 0 0 6px #7a7aff;
+}
+
+button.btn-primary {
+  border: none;
+  padding: 0.65rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #5848d8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+}
